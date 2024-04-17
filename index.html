@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ponch'Folio</title>
+    <link rel="shortcut icon" type="x-icon" href="img/saturne.png">
+</head>
+<body>
+    <header>
+        <div class="header-boxed">
+            <div class="flex space-between aligne-center">
+                <button onclick="openMenu()" class="header-menu-mobile">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <a href="#Accueil" class="header-logo loupe"><img src="img/saturne.png" alt=""></a>
+                <ul class="header-menu">
+                    <li class="loupe"><a href="#Accueil">Accueil</a></li>
+                    <li class="loupe"><a href="#Propos">À propos</a></li>
+                    <li class="loupe"><a href="#Compétences">Compétences</a></li>
+                    <li class="loupe"><a href="#Projets">Projets</a></li>
+                    <li class="loupe"><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider" id="Accueil">
+        <video src="vid/gif_espace_violet.mp4" autoplay loop muted playsinline class="slider-background"></video>
+            <div class="slider-content">
+                <img class="rounded-img" src="img/photo_cv.jpg" alt="photo_cv">
+                <h1>Mathieu GAUDRON</h1>
+                <p>Developpeur Full-Stack</p>
+            </div>
+    </div>
+    
+    <div class="section" id="Propos">
+        <div class="boxed">
+            <div class="flex toColumn mCenter">
+                <div class="w40 wm100">
+                    <h2>À propos de moi</h2>
+                </div>
+                <div class="w60">
+                    <p>Bonjour, je m'appelle Mathieu j'ai 25 ans et je suis étudiant en développement web à la WebAcademie d'EPITECH. Animé par la création de sites web. Je donne le meilleur de moi-même à chaque nouveau projet pour m'améliorer et évoluer dans ce domaine. Voici quelques projets pour vous montrer mes compétences :</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark" id="Compétences">
+        <video src="vid/gif_espace_noir.mp4" autoplay playsinline loop muted class="dark-background"></video>
+        <div class="boxed text-center">
+            <h2>Mes Compétences</h2>
+            <div class="flex toColumn gap20">
+
+                    <div class="w25 wm100 skill loupe">
+                        <img src="img/html.png" alt="html">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="w25 wm100 skill loupe">
+                        <img src="img/css-3.png" alt="css">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="w25 wm100 skill loupe">
+                        <img src="img/js.png" alt="javascript">
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                    <div class="w25 wm100 skill loupe">
+                        <img src="img/php.png" alt="php">
+                        <h3>PHP</h3>
+                    </div><div class="w25 wm100 skill loupe">
+                        <img src="img/mysql.png" alt="mysql">
+                        <h3>MySQL</h3>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+
+    <div class="section" id="Projets">
+        <div class="boxed text-center">
+            <h2>Mes Projets</h2>
+                <div class="flex wrap gap20 space-between">
+                    <div class="w32 wm46 realisation">
+                        <a href="https://github.com/MathieuGaudron/Puissance_4" target="_blank" title="Puissance_4">
+                            <video id="video1" class="myVideo loupe" preload="auto" muted loop src="vid/Puissance_4_Preview.mp4"></video>
+                            <h3>Puissance 4</h3>
+                        </a>
+                        <!-- <p>Jeu en HTML, CSS & JAVASCRIPT (Manipulation du DOM)
+                            Projet individuel
+                            </p>
+                            <br> -->
+                    </div>
+                    <div class="w32 wm46 realisation">
+                        <a href="https://github.com/MathieuGaudron/Morpion" target="_blank" title="Morpion">
+                            <video id="video2" class="myVideo loupe" preload="auto" muted loop src="vid/Morpion_Preview.mp4"></video>
+                            <!-- <video src="vid/gif_asteroide_2.mp4" class="myVideo loupe" autoplay muted loop ></video> -->
+                            <h3>Morpion</h3>
+                        </a>
+                        <!-- <p>Jeu en HTML, CSS & JAVASCRIPT (Manipulation du DOM)
+                            Projet individuel
+                            </p>
+                            <br> -->
+                    </div>
+                    <div class="w32 wm46 realisation">
+                        <a href="https://github.com/MathieuGaudron/My_Cinema" target="_blank" title="My_Cinema">
+                            <video id="video3" class="myVideo loupe" preload="auto" muted loop src="vid/My_Cinema_Preview.mp4"></video>
+                            <h3>My Cinema</h3>
+                        </a>
+                        <!-- <p>
+                            Projet en PHP & MySQL visant a reproduire un site de cinéma.
+                            Projet individuel
+                        </p>
+                        <br> -->
+                    </div>
+                    <div class="w32 wm46 realisation">
+                        <a href="https://github.com/MathieuGaudron/Maquette_Responsive" target="_blank" title="Maquette_Responsive">
+                            <video id="video4" class="myVideo loupe" preload="auto" muted loop src="vid/Maquette_Preview.mp4"></video>
+                            <h3>Maquette Responsive</h3>
+                        </a>
+                        <!-- <p> Reproduction d'une maquette HTML & CSS en Responsive</p>
+                        <br> -->
+                    </div>
+                    <div class="w32 wm46 realisation">
+                        <a href="https://github.com/MathieuGaudron/Sprite_Sheet" target="_blank" title="Sprite_Sheet">
+                            <video id="video5" class="myVideo loupe" preload="auto" muted loop src="vid/Sprite_Sheet_Preview.mp4"></video>
+                            <h3>SpriteSheet</h3>
+                        </a>
+                        <!-- <p>Reproduction d'une SpriteSheet en PHP</p>
+                        <br> -->
+                    </div>
+                    <div class="w32 wm46 realisation">
+                        <a href="">
+                            <video id="video6" class="myVideo loupe" preload="auto" muted loop src="vid/Portefolio_WAC_Preview.mp4"></video>
+                            <h3>Portfolio</h3>
+                        </a>
+                        <!-- <p>Premier Portfolio en HTML, CSS & JAVASCRIPT</p>
+                        <br> -->
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="section dark" id="Contact">
+        <video src="vid/gif_espace_noir.mp4" autoplay loop playsinline muted class="dark-background"></video>
+        <div class="boxed text-center">
+            <h2>Contactez-moi</h2>
+            <div class="flex toColumn space-between mgap35">
+                <div class="w25 wm100">
+                    <span><i class="fa-sharp fa-regular fa-envelope fa-2x"></i></span>
+                    <span class="label">Email</span>
+                    <span class="souslabel loupe" onclick="openPopup()">mathieu.gaudron@epitech.eu</span>
+                
+                    <div id="popupFormulaire" class="popupFormulaire">
+                        <form action="https://submit-form.com/5KmPcqUvx" id="myForm">
+                            <button class="closeBtn" onclick="closePopup()">X</button>
+
+                            <h2 class="form-title">ME CONTACTEZ</h2>
+
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre Nom" required="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre Email" required="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Entrez votre Message" required=""></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="w25 wm100">
+                    <span><i class="fa-solid fa-phone fa-2x"></i></span>
+                    <span class="label">Téléphone</span>
+                    <span class="souslabel">06 28 58 84 49</span>
+                </div>
+                <div class="w25 wm100">
+                    <span><i class="fa-brands fa-github fa-2x"></i></span>
+                    <span class="label">GitHub</span>
+                    <span class="souslabel loupe"><a href="https://github.com/MathieuGaudron" target="_blank" title="GitHub">/MathieuGaudron</a></span>
+                </div>
+                <div class="w25 wm100">
+                    <span><i class="fa-brands fa-linkedin fa-2x"></i></span>
+                    <span class="label">Linkedin</span>
+                    <span class="souslabel loupe"><a href="https://www.linkedin.com/in/mathieu-gaudron-42905714b/" target="_blank" title="Linkedin">/MathieuGaudron</a></span>
+                </div>
+                <div class="w25 wm100">
+                    <span class="label">Télécharger mon cv</span>
+                    <span class="souslabel loupe">
+                        <a href="CV_DEV_WEB1.pdf" download=""><i class="fa-solid fa-download fa-2x cursor"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
